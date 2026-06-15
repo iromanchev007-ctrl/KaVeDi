@@ -1,0 +1,14 @@
+# Конфигурация для Netlify
+# Статический сайт публикуется из корня проекта.
+
+[build]
+  publish = "."
+
+# Если используете безопасный вариант (USE_SERVER_ENDPOINT = true),
+# раскомментируйте строки ниже и положите функцию в netlify/functions/send.js
+# (можно скопировать логику из api/send.js).
+#
+# [[redirects]]
+#   from = "/api/send"
+#   to = "/.netlify/functions/send"
+#   status = 200
